@@ -98,6 +98,8 @@ struct argparse {
     const char **out;
     int cpidx;
     const char *optvalue;       // current option value
+    int error;                  // error flag, (1) failed, (0) success.
+    char *reason;               // reason when failed
 };
 
 // built-in callbacks
